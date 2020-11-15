@@ -1,0 +1,9 @@
+.jumbotron {
+    color: rgb(251, 255, 0);
+}
+
+.jumbotron {
+    background-image: url(img/maskCloseup.jpg);
+    background-size: cover;
+    background-position: center;
+}
