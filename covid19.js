@@ -16,9 +16,6 @@ const selectDate = document.querySelector("#dates")
 getTodaysData().then((data) => {
     todaysCasesEl.innerHTML = data.cases.daily.toLocaleString()
     totalCasesEl.innerHTML = data.cases.cumulative.toLocaleString()
-})
-//set the information for yesterdays deaths
-getYesterdaysData().then((data) => {
     todaysDeathsEl.innerHTML = data.deaths.daily.toLocaleString()
     totalDeathsEl.innerHTML = data.deaths.cumulative.toLocaleString()
 })

@@ -6,13 +6,13 @@ const covidURL = 'https://api.coronavirus.data.gov.uk/v1/data?' +
 // get todats date
 const currentDay = function(sp){
     let today = new Date();
-    let dd = today.getDate();
+    let dd = today.getDate()-1;
     let mm = today.getMonth()+1;
     let yyyy = today.getFullYear();
     
     if(dd<10) dd='0'+dd;
     if(mm<10) mm='0'+mm;
-    return (yyyy+sp+mm+sp+dd.toString());
+    return (dd+sp+mm+sp+yyyy.toString());
 }
 
 // get the data from the API
@@ -31,16 +31,9 @@ const getData = async () => {
 //data from most recent days entry
 const getTodaysData = async () => {
     let todaysData = await getData()
-    todaysData = todaysData[0]
+    todaysData = todaysData[1]
     // console.log(todaysData)
     return todaysData
-}
-
-//data from previous days entry (as deaths are not up dated on most recent day)
-const getYesterdaysData = async () => {
-    let yesterdaysData = await getData()
-    yesterdaysData = yesterdaysData[1]
-    return yesterdaysData
 }
 
 //create and show data for the selected date
