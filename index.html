@@ -15,7 +15,6 @@
                 <h3 class="display-4 text-center" id='todaysDate'></h3>
             </div>
         </div>
-
         <!-- dropdown date selector -->
         <form class='text-center'>
             <label for='date'>Choose a date:</label>
@@ -25,55 +24,45 @@
         </form>
 
         <div id="selectedDateHeader" class='text-center m-3'></div>
-
         <div class="container text-center mt-3">
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-3 col-6">
                     <div id='covidCasesOnThisDate'></div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-3 col-6">
                     <div id='covidDeathsOnThisDate'></div>
                 </div>
-            </div>
-        </div>
-        <div class="container text-center mt-3">
-            <div class="row">
-                <div class="col-6">
+                <div class="col-md-3 col-6">
                     <div id='totalCasesOnThisDate'></div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-3 col-6">
                     <div id='totalDeathsOnThisDate'></div>
                 </div>
             </div>
         </div>
 
         <div class="container text-center mt-3">
-            <h2>UK's Recent Covid Figures</h2>
+            <h2>Yesterday's UK Covid Data</h2>
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 col-md-3">
                     <div class="card border-dark mb-3">
-                        <div class="card-header">Cases Yesterday</div>
+                        <div class="card-header">Cases</div>
                         <div class="card-body text-dark">
                             <h5 class="card-title" id='todaysCases'></h5>
                             <p class="card-text"></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 col-md-3">
                     <div class="card border-dark mb-3">
-                        <div class="card-header">Deaths Yesterday</div>
+                        <div class="card-header">Deaths</div>
                         <div class="card-body text-dark">
                             <h5 class="card-title" id='todaysDeaths'></h5>
                             <p class="card-text"></p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="container text-center mt-3">
-            <div class="row">
-                <div class="col-6">
+                <div class="col-6 col-md-3">
                     <div class="card border-dark mb-3">
                         <div class="card-header">Total Cases</div>
                         <div class="card-body text-dark">
@@ -82,7 +71,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 col-md-3">
                     <div class="card border-dark mb-3">
                         <div class="card-header">Total Deaths</div>
                         <div class="card-body text-dark">
@@ -93,9 +82,6 @@
                 </div>
             </div>
         </div>
-                    
-
-
         <script src='requests.js'></script>
         <script src='functions.js'></script>
         <script src='covid19.js'></script>
