@@ -16,7 +16,39 @@
             </div>
         </div>
 
+        <!-- dropdown date selector -->
+        <form class='text-center'>
+            <label for='date'>Choose a date:</label>
+            <select id='dates' name='dates'>
+                <option id='currentDate'>Date</option>
+            </select>
+        </form>
+
+        <div id="selectedDateHeader" class='text-center m-3'></div>
+
         <div class="container text-center mt-3">
+            <div class="row">
+                <div class="col-6">
+                    <div id='covidCasesOnThisDate'></div>
+                </div>
+                <div class="col-6">
+                    <div id='covidDeathsOnThisDate'></div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center mt-3">
+            <div class="row">
+                <div class="col-6">
+                    <div id='totalCasesOnThisDate'></div>
+                </div>
+                <div class="col-6">
+                    <div id='totalDeathsOnThisDate'></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center mt-3">
+            <h2>UK's Recent Covid Figures</h2>
             <div class="row">
                 <div class="col-6">
                     <div class="card border-dark mb-3">
@@ -62,36 +94,7 @@
             </div>
         </div>
                     
-        <!-- dropdown date selector -->
-        <form class='text-center'>
-            <label for='date'>Choose a date:</label>
-            <select id='dates' name='dates'>
-                <option id='currentDate'>Date</option>
-            </select>
-        </form>
 
-        <div id="selectedDateHeader" class='text-center m-3'></div>
-
-        <div class="container text-center mt-3">
-            <div class="row">
-                <div class="col-6">
-                    <div id='covidCasesOnThisDate'></div>
-                </div>
-                <div class="col-6">
-                    <div id='covidDeathsOnThisDate'></div>
-                </div>
-            </div>
-        </div>
-        <div class="container text-center mt-3">
-            <div class="row">
-                <div class="col-6">
-                    <div id='totalCasesOnThisDate'></div>
-                </div>
-                <div class="col-6">
-                    <div id='totalDeathsOnThisDate'></div>
-                </div>
-            </div>
-        </div>
 
         <script src='requests.js'></script>
         <script src='functions.js'></script>
