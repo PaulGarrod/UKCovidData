@@ -1,7 +1,6 @@
 // data API URL
-const covidURL = 'https://api.coronavirus.data.gov.uk/v1/data?' +
-'filters=areaType=nation;areaName=england&' +
-'structure={"date":"date","cases":{"daily":"newCasesByPublishDate","cumulative":"cumCasesByPublishDate"},"deaths":{"daily":"newDeathsByDeathDate","cumulative":"cumDeathsByDeathDate"},"tests":{"daily":"newTestsByPublishDate","cumulative":"cumTestsByPublishDate"},"deathsIn28Days":{"daily":"newDeaths28DaysByPublishDate","cumulative":"cumDeaths28DaysByPublishDate"},"hospitalCases":"hospitalCases"}'
+const covidURL = 'https://api.coronavirus.data.gov.uk/v1/data?filters=areaType=nation;areaName=england&structure={"date":"date","areaName":"areaName","areaCode":"areaCode","newCasesByPublishDate":"newCasesByPublishDate","cumCasesByPublishDate":"cumCasesByPublishDate","newDeathsByDeathDate":"newDeathsByDeathDate","cumDeathsByDeathDate":"cumDeathsByDeathDate"}'
+
 
 // get todats date
 const currentDay = function(sp){
@@ -21,10 +20,10 @@ const getData = async () => {
 
     if (response.status === 200 || response.status === 204) {
         const data = await response.json()
-        // console.log(data)
+        // console.log(data.data)
         return data.data
     } else {
-        throw new Error ('Whoops something went wrong with the respsonse!')
+        throw new Error ('ERROR SOMETHING');
     }
 }
 
@@ -32,6 +31,6 @@ const getData = async () => {
 const getTodaysData = async () => {
     let todaysData = await getData()
     todaysData = todaysData[1]
-    // console.log(todaysData)
+    console.log(todaysData)
     return todaysData
 }

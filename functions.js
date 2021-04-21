@@ -27,10 +27,10 @@ const selectedData = () => {
         const casesTitle = document.createElement('div')
         document.querySelector('#casesBody').appendChild(casesTitle)
         casesTitle.className = 'card-title'
-        if(dateObject.cases.daily == null){
+        if(dateObject.newCasesByPublishDate == null){
             casesTitle.innerHTML = 'Data not yet available'
         } else {
-            casesTitle.innerHTML = dateObject.cases.daily.toLocaleString()
+            casesTitle.innerHTML = dateObject.newCasesByPublishDate.toLocaleString()
         }
         
         //death numbers on selected date
@@ -52,10 +52,10 @@ const selectedData = () => {
         const deathsTitle = document.createElement('div')
         document.querySelector('#deathsBody').appendChild(deathsTitle)
         deathsTitle.className = 'card-title'
-        if (dateObject.deaths.daily == null) {
+        if (dateObject.newDeathsByDeathDate == null) {
             deathsTitle.innerHTML = 'Data not yet available'
         } else {
-            deathsTitle.innerHTML = dateObject.deaths.daily.toLocaleString()        
+            deathsTitle.innerHTML = dateObject.newDeathsByDeathDate.toLocaleString()        
         }
         
         //Total cases on selected date
@@ -78,10 +78,10 @@ const selectedData = () => {
         const totalCasesTitle = document.createElement('div')
         document.querySelector('#totalCasesBody').appendChild(totalCasesTitle)
         totalCasesTitle.className = 'card-title'
-        if (dateObject.cases.cumulative == null) {
+        if (dateObject.cumCasesByPublishDate == null) {
             totalCasesTitle.innerHTML = 'Data not yet available'
         } else {
-            totalCasesTitle.innerHTML = dateObject.cases.cumulative.toLocaleString()
+            totalCasesTitle.innerHTML = dateObject.cumCasesByPublishDate.toLocaleString()
         }
       
         //Total deaths on selected date
@@ -103,10 +103,10 @@ const selectedData = () => {
         const totalDeathsTitle = document.createElement('div')
         document.querySelector('#totalDeathsBody').appendChild(totalDeathsTitle)
         totalDeathsTitle.className = 'card-title'
-        if (dateObject.deaths.cumulative == null) {
+        if (dateObject.cumDeathsByDeathDate == null) {
             totalDeathsTitle.innerHTML = 'Data not yet available'
         } else {
-            totalDeathsTitle.innerHTML = dateObject.deaths.cumulative.toLocaleString()
+            totalDeathsTitle.innerHTML = dateObject.cumDeathsByDeathDate.toLocaleString()
         }
     })
 }

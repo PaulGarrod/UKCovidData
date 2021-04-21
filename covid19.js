@@ -14,10 +14,10 @@ const selectDate = document.querySelector("#dates")
 
 //set the information for todays cases
 getTodaysData().then((data) => {
-    todaysCasesEl.innerHTML = data.cases.daily.toLocaleString()
-    totalCasesEl.innerHTML = data.cases.cumulative.toLocaleString()
-    todaysDeathsEl.innerHTML = data.deaths.daily.toLocaleString()
-    totalDeathsEl.innerHTML = data.deaths.cumulative.toLocaleString()
+    todaysCasesEl.innerHTML = data.newCasesByPublishDate.toLocaleString()
+    totalCasesEl.innerHTML = data.cumCasesByPublishDate.toLocaleString()
+    todaysDeathsEl.innerHTML = data.newDeathsByDeathDate.toLocaleString()
+    totalDeathsEl.innerHTML = data.cumDeathsByDeathDate.toLocaleString()
 })
 
 //append a list of dates to the select options
@@ -38,7 +38,7 @@ selectDate.addEventListener('change', () => {
 })
 
 //Need to integrate this? 
-const highestDeathDay = getData().then((data) => {
-    let highestDeaths = Math.max.apply(Math, data.map (function (o) {return o.deaths.daily}))
-    return highestDeaths
-})
+// const highestDeathDay = getData().then((data) => {
+//     let highestDeaths = Math.max.apply(Math, data.map (function (o) {return o.deaths.daily}))
+//     return highestDeaths
+// })
