@@ -21,6 +21,7 @@ const getData = async () => {
     if (response.status === 200 || response.status === 204) {
         const data = await response.json()
         // console.log(data.data)
+        console.log(data);
         return data.data
     } else {
         throw new Error ('ERROR SOMETHING');

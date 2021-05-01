@@ -7,3 +7,14 @@
     background-size: cover;
     background-position: center;
 }
+
+#myDailyChart, #myCumulChart {
+    max-height: 500px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.footer {
+    background-color: rgb(102, 101, 101);
+    color:rgb(251, 255, 0);
+}

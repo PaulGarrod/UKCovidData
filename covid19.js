@@ -35,10 +35,4 @@ selectDate.addEventListener('change', () => {
     clearSelectedDateData()
     //create elements and import data from selected date
     selectedData()
-})
-
-//Need to integrate this? 
-// const highestDeathDay = getData().then((data) => {
-//     let highestDeaths = Math.max.apply(Math, data.map (function (o) {return o.deaths.daily}))
-//     return highestDeaths
-// })
+});
