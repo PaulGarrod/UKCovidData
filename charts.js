@@ -36,8 +36,6 @@ getData().then((data) => {
             }]
         },
         options: {
-            responsive: true,
-            maintainAspectRatio: true,
             scales: {
                 y: {
                     beginAtZero: true
@@ -66,8 +64,6 @@ getData().then((data) => {
             }]
         },
         options: {
-            responsive: true,
-            maintainAspectRatio: true,
             scales: {
                 y: {
                     beginAtZero: true
