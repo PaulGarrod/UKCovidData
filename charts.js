@@ -23,14 +23,14 @@ getData().then((data) => {
             datasets: [{
                 label: '# New Cases per Day',
                 data: newCasesArray,
-                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                backgroundColor: 'rgba(54, 162, 235, 0.9)',
                 borderColor: 'rgba(54, 162, 235, 1)',
-                borderWidth: 1
+                borderWidth: 0
             },
             {
                 label: '# New Deaths per Day',
                 data: newDeathsArray,
-                backgroundColor: 'rgba(255, 0, 0, 0.2)',
+                backgroundColor: 'rgba(255, 0, 0, 0.4)',
                 borderColor: 'red',
                 borderWidth: 1
             }]
@@ -51,9 +51,9 @@ getData().then((data) => {
             datasets: [{
                 label: '# Total Cases',
                 data: cumulCasesArray,
-                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                backgroundColor: 'rgba(54, 162, 235, 0.9)',
                 borderColor: 'rgba(54, 162, 235, 1)',
-                borderWidth: 1
+                borderWidth: 0
             },
             {
                 label: '# Total Deaths',
