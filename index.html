@@ -17,14 +17,20 @@
         </div>
         
         <!-- Charts -->
-        <div class="row mb-5 pb-5 text-center">
-            <div class="col-12 col-md-6 pb-5" id="dailyChartContainer">
+        <div class="row mb-5 text-center container">
+            <div class="col-12 col-md-6 pb-5" >
                 <h2>Daily Cases / Deaths</h2>
-                <canvas id="myDailyChart" width="450" height="450"></canvas>
-            </div>
-            <div class="col-12 col-md-6 pb-5">
+                <p>Click on chart key (below) to remove data</p>
+                <div id="dailyChartContainer">
+                    <canvas id="myDailyChart" width="450" height="450"></canvas>
+                </div>
+            </div> 
+            <div class="col-12 col-md-6 pb-5" >
                 <h2>Total Cases / Deaths</h2>
-                <canvas id="myCumulChart"  width="450" height="450"></canvas>
+                <p>Click on chart key (below) to remove data</p>
+                <div>
+                    <canvas id="myCumulChart"  width="450" height="450"></canvas>
+                </div>
             </div>
         </div>
         
