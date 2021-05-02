@@ -34,23 +34,25 @@
             </div>
         </div>
         
-        <!-- dropdown date selector -->
-        <form class='text-center'>
-            <label for='date'>Choose a date:</label>
-            <select id='dates' name='dates'>
-                <option id='currentDate'>Date</option>
-            </select>
-        </form>
-        <!--  -->
-        <div id="selectedDateHeader" class='text-center m-3'></div>
-        <div class="container text-center mt-3">
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <div id='covidCasesOnThisDate'></div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div id='covidDeathsOnThisDate'></div>
-                </div>
+        <div class="container text-center">
+            <h2>Display data from any date</h2>
+            <!-- dropdown date selector -->
+            <form class='mt-4 text-center'>
+                <label for='date'>Choose a date:</label>
+                <select id='dates' name='dates'>
+                    <option id='currentDate'>Date</option>
+                </select>
+            </form>
+            <!--  -->
+            <div id="selectedDateHeader" class='text-center m-3'></div>
+            <div class="container text-center mt-3">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <div id='covidCasesOnThisDate'></div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div id='covidDeathsOnThisDate'></div>
+                    </div>
                 <div class="col-md-3 col-6">
                     <div id='totalCasesOnThisDate'></div>
                 </div>
@@ -59,7 +61,7 @@
                 </div>
             </div>
         </div>
-
+        
         <div class="container text-center mb-5">
             <h2>Yesterday's UK Covid Data</h2>
             <div class="row">
@@ -101,8 +103,9 @@
                 </div>
             </div>
         </div>
+    </div>
         <div class="footer row text-center">
-            <div class="col-12">
+            <div class="col-12 p-3">
                 <h5>Created by Paul Garrod </h5>
             </div>
         </div>
