@@ -9,11 +9,24 @@
     <title>Covid 19 Info UK</title>
 </head>
     <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="WR4KnPu6"></script>
+        <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
         <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-3 text-center">UK Covid Data</h1>
-                <h3 class="display-4 text-center" id='todaysDate'></h3>
+            <div class="container text-center">
+                <h1 class="display-3">UK Covid Data</h1>
+                <h3 class="display-4" id='todaysDate'></h3>
             </div>
+
+            <div class="row socials">
+                <div id="linkedinLogo">
+                    <script type="IN/Share" data-url="https://uk-covid-data.netlify.app/"></script>
+                </div>
+                <div id="fbLogo" class="fb-share-button" data-href="https://uk-covid-data.netlify.app/" data-layout="button" data-size="small">
+                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fuk-covid-data.netlify.app%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"></a>
+                </div>
+            </div>
+
         </div>
         
         <!-- Charts -->
@@ -104,8 +117,16 @@
             </div>
         </div>
     </div>
-    <div class="footer text-center p-3 col-12">
-        <h5>Created by Paul Garrod </h5>
+    <div class="footer text-center p-3 col-12"> 
+        <h5>
+            <a href="https://www.linkedin.com/in/paulgarrod/" target="_blank">
+                Created By Paul Garrod
+            </a>
+             | 
+            <a href="https://www.prgwebdesign.com" target="_blank">
+                Lets Work Together
+            </a>
+        </h5>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
     <script src='requests.js'></script>

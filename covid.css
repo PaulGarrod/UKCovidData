@@ -17,3 +17,22 @@
 .container {
     margin: 0 auto;
 }
+
+a {
+    color: inherit;
+    font-style: italic;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+#linkedinLogo, #fbLogo{
+    margin: 0 15px;
+    border-radius: 4px;
+}
+
+.footer h5 {
+    display: inline;
+}
