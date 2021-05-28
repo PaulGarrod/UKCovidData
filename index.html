@@ -9,10 +9,10 @@
     <title>Covid 19 Info UK</title>
 </head>
     <body>
-        <div id="fb-root"></div>
+    <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="WR4KnPu6"></script>
         <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-        <div class="jumbotron jumbotron-fluid">
+        <header class="jumbotron jumbotron-fluid">
             <div class="container text-center">
                 <h1 class="display-3">UK Covid Data</h1>
                 <h3 class="display-4" id='todaysDate'></h3>
@@ -27,10 +27,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
         
         <!-- Charts -->
-        <div class="row mb-5 text-center container">
+        <section class="row mb-5 text-center container">
             <div class="col-12 col-md-6 pb-5" >
                 <h2>Daily Cases / Deaths</h2>
                 <p>Click on chart key (below) to remove data</p>
@@ -45,9 +45,9 @@
                     <canvas id="myCumulChart"  width="450" height="450"></canvas>
                 </div>
             </div>
-        </div>
+        </section>
         
-        <div class="container text-center">
+        <section class="container text-center">
             <h2>Display data from any date</h2>
             <!-- dropdown date selector -->
             <form class='mt-4 text-center'>
@@ -73,9 +73,9 @@
                     <div id='totalDeathsOnThisDate'></div>
                 </div>
             </div>
-        </div>
+        </section>
         
-        <div class="mb-5">
+        <section class="mb-5">
             <h2>Yesterday's UK Covid Data</h2>
             <div class="row">
                 <div class="col-6 col-md-3">
@@ -115,9 +115,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
-    <div class="footer text-center p-3 col-12"> 
+    <footer class="footer text-center p-3 col-12"> 
         <h5>
             <a href="https://www.linkedin.com/in/paulgarrod/" target="_blank">
                 Created By Paul Garrod
@@ -127,7 +127,7 @@
                 Lets Work Together
             </a>
         </h5>
-    </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
     <script src='requests.js'></script>
     <script src='functions.js'></script>
