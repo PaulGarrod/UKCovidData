@@ -1,21 +1,15 @@
 .jumbotron {
     color: rgb(251, 255, 0);
-}
-
-.jumbotron {
     background-image: url(img/maskCloseup.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.footer {
-    background-color: rgb(102, 101, 101);
-    color:rgb(251, 255, 0);
-    width: 100%;
-}
 
 .container {
     margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
 }
 
 a {
@@ -33,6 +27,24 @@ a {
     border-radius: 4px;
 }
 
-.footer h5 {
+.card-header, .card-title {
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(102, 101, 101);
+    color:rgb(251, 255, 0);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-text {
     display: inline;
+    font-size: 1.3em;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: inherit;
 }
