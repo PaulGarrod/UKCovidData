@@ -1,5 +1,5 @@
 // data API URL
-const covidURL = 'https://api.coronavirus.data.gov.uk/v1/data?filters=areaType=nation;areaName=england&structure={"date":"date","areaName":"areaName","areaCode":"areaCode","newCasesByPublishDate":"newCasesByPublishDate","cumCasesByPublishDate":"cumCasesByPublishDate","newDeathsByDeathDate":"newDeathsByDeathDate","cumDeathsByDeathDate":"cumDeathsByDeathDate"}'
+const covidURL = 'https://api.coronavirus.data.gov.uk/v1/data?filters=areaType=nation;areaName=england&structure={"date":"date","areaName":"areaName","areaCode":"areaCode","newCasesByPublishDate":"newCasesByPublishDate","cumCasesByPublishDate":"cumCasesByPublishDate","newDeathsByDeathDate":"newDeaths28DaysByPublishDate","cumDeathsByDeathDate":"cumDeaths28DaysByPublishDate"}'
 
 
 // get todats date
@@ -22,7 +22,7 @@ const getData = async () => {
         const data = await response.json()
         return data.data
     } else {
-        throw new Error ('ERROR SOMETHING');
+        throw new Error ('Whoops, Something went wrong with the Fetch Request!');
     }
 }
 
